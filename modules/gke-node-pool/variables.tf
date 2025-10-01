@@ -158,7 +158,7 @@ variable "node_config" {
       sandbox_type = string
     }))
     boot_disk_kms_key = optional(string)
-    service_account   = optional(string)
+    service_account   = string
     shielded_instance_config = optional(object({
       enable_secure_boot          = optional(bool)
       enable_integrity_monitoring = optional(bool)
