@@ -218,18 +218,6 @@ variable "node_config" {
       }))
     }))
   })
-  default = {
-    disk_size_gb = 100
-    disk_type    = "pd-standard"
-    image_type   = "COS_CONTAINERD"
-    machine_type = "e2-medium"
-    workload_metadata_config = {
-      mode = "GKE_METADATA"
-    }
-    kubelet_config = {
-      insecure_kubelet_readonly_port_enabled = false
-    }
-  }
 }
 
 variable "network_config" {
